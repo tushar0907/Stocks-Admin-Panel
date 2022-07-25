@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./pages/home/Home";
 import UserList from "./pages/home/userList/UserList";
 import User from "./pages/home/user/User";
+import NewUser from "./pages/newUser/NewUser"
 import {
   BrowserRouter as Router,
   Routes,
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/users" element={<UserList />} />
           <Route path="/user" element={<User />} />
+          <Route path="/newUser" element={<NewUser />} />
 
 
         </Routes>

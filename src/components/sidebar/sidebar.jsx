@@ -1,4 +1,6 @@
 import "./sidebar.css";
+import "../../App.css";
+import {Link} from "react-router-dom";
 import {
     LineStyle,
     Timeline,
@@ -42,16 +44,19 @@ export default function Sidebar() {
                     <h3 className="sidebarTitle">Quick Menu</h3>
                     <ul className="sidebarList">
 
-                        <li className="sidebarListItem">
-                            <PermIdentity className="sidebarIcon" />
-                            Users
-                        </li>
+                        <Link to="/users" className="link">
+                            <li className="sidebarListItem">
+                                <PermIdentity className="sidebarIcon" />
+                                Users
+                            </li>
+                        </Link>
 
-
-                        <li className="sidebarListItem">
-                            <Storefront className="sidebarIcon" />
-                            Products
-                        </li>
+                        <Link to="/products" className="link">
+                            <li className="sidebarListItem">
+                                <Storefront className="sidebarIcon" />
+                                Products
+                            </li>
+                        </Link>
 
                         <li className="sidebarListItem">
                             <AttachMoney className="sidebarIcon" />
