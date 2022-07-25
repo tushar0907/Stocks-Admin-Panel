@@ -32,22 +32,6 @@ export default function Sidebar() {
                             </li>
                         </Link>
 
-
-
-                        <li className="sidebarListItem">
-                            <Timeline className="sidebarIcon" />
-                            Analytics
-                        </li>
-                        <li className="sidebarListItem">
-                            <TrendingUp className="sidebarIcon" />
-                            Sales
-                        </li>
-                    </ul>
-                </div>
-                <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">Quick Menu</h3>
-                    <ul className="sidebarList">
-
                         <Link to="/users" className="link">
                             <li className="sidebarListItem">
                                 <PermIdentity className="sidebarIcon" />
@@ -61,6 +45,26 @@ export default function Sidebar() {
                                 Products
                             </li>
                         </Link>
+
+
+
+
+                    </ul>
+                </div>
+                <div className="sidebarMenu">
+                    <h3 className="sidebarTitle">Quick Menu</h3>
+                    <ul className="sidebarList">
+
+                        <li className="sidebarListItem">
+                            <Timeline className="sidebarIcon" />
+                            Analytics
+                        </li>
+                        <li className="sidebarListItem">
+                            <TrendingUp className="sidebarIcon" />
+                            Sales
+                        </li>
+
+
 
                         <li className="sidebarListItem">
                             <AttachMoney className="sidebarIcon" />
